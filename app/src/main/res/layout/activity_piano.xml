@@ -93,15 +93,55 @@
             android:id="@+id/btnDoSos"
             android:layout_width="58dp"
             android:layout_height="155dp"
+            android:layout_marginStart="60dp"
             android:background="#000000"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/btnReSos"
             android:layout_width="58dp"
             android:layout_height="155dp"
+            android:layout_marginStart="32dp"
             android:background="#000000"
-            tools:layout_editor_absoluteX="140dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnDoSos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/btnFaSos"
+            android:layout_width="58dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="116dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnReSos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnSolSos"
+            android:layout_width="58dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="32dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnFaSos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnLaSos"
+            android:layout_width="58dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="28dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSolSos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
