@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/piano"
+        android:title="PianoTradicional"
+        app:showAsAction="collapseActionView"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/animales"
+        android:title="Piano Animales"
+        app:showAsAction="collapseActionView"
+        android:orderInCategory="2"
+        />
+
+
+    <item
+        android:id="@+id/instrumentos"
+        android:title="Piano Instrumentos"
+        app:showAsAction="collapseActionView"
+        android:orderInCategory="3"
+        />
+
+    <item
+        android:id="@+id/imformacion"
+        android:title="Acerca de "
+        app:showAsAction="collapseActionView"
+        android:orderInCategory="4"
+        />
+
+    <item
+        android:id="@+id/salir"
+        android:title="Salir"
+        app:showAsAction="collapseActionView"
+        android:orderInCategory="5"
+        />
+
+</menu>
