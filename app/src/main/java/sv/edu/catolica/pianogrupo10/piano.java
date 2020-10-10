@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class piano extends AppCompatActivity {
-    MediaPlayer notas1,notas2,notas3,notas4,notas5,notas6,notas7;
+    MediaPlayer notas1,notas2,notas3,notas4,notas5,notas6,notas7,n1,n2,n3,n4,n5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,5 +79,28 @@ public class piano extends AppCompatActivity {
         notas7=MediaPlayer.create(this,R.raw.si);
         notas7.start();
     }
+
+
+    public void n1(View v){
+        n1=MediaPlayer.create(this,R.raw.dosharp);
+        n1.start();
+    }
+    public void n2(View v){
+        n2=MediaPlayer.create(this,R.raw.resharp);
+        n2.start();
+    }
+    public void n3(View v){
+        n3=MediaPlayer.create(this,R.raw.fasharp);
+        n3.start();
+    }
+    public void n4(View v){
+        n4=MediaPlayer.create(this,R.raw.solsharp);
+        n4.start();
+    }
+    public void n5(View v){
+        n5=MediaPlayer.create(this,R.raw.lasharp);
+        n5.start();
+    }
+
 
 }
