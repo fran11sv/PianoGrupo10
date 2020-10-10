@@ -3,11 +3,14 @@ package sv.edu.catolica.pianogrupo10;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class piano extends AppCompatActivity {
+    MediaPlayer notas1,notas2,notas3,notas4,notas5,notas6,notas7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,5 +50,34 @@ public class piano extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void one(View v){
+        notas1=MediaPlayer.create(this,R.raw.notado);
+        notas1.start();
+    }
+    public void dos(View v){
+        notas2=MediaPlayer.create(this,R.raw.re);
+        notas2.start();
+    }
+    public void tres(View v){
+        notas3=MediaPlayer.create(this,R.raw.mi);
+        notas3.start();
+    }
+    public void cuatro(View v){
+        notas4=MediaPlayer.create(this,R.raw.fa);
+        notas4.start();
+    }
+
+    public void cinco(View v){
+        notas5=MediaPlayer.create(this,R.raw.sol);
+        notas5.start();
+    }
+    public void seis(View v){
+        notas6=MediaPlayer.create(this,R.raw.la);
+        notas6.start();
+    }
+    public void siete(View v){
+        notas7=MediaPlayer.create(this,R.raw.si);
+        notas7.start();
+    }
 
 }
