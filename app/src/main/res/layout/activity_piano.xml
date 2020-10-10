@@ -10,11 +10,18 @@
     tools:context=".piano">
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
 
 
         <Button
@@ -22,17 +29,15 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-
-            android:text="DO"
-            app:layout_constraintStart_toStartOf="parent"
-            />
+            android:text="@string/do_nota"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btnRe"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-            android:text="RE"
+            android:text="@string/re_nota"
             app:layout_constraintStart_toEndOf="@+id/btnDo"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -41,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-            android:text="MI"
+            android:text="@string/mi_nota"
             app:layout_constraintStart_toEndOf="@+id/btnRe"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -50,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-            android:text="FA"
+            android:text="@string/fa_nota"
             app:layout_constraintStart_toEndOf="@+id/btnMi"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -59,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-            android:text="SOL"
+            android:text="@string/sol_nota"
             app:layout_constraintStart_toEndOf="@+id/btnFa"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -68,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-            android:text="LA"
+            android:text="@string/la_nota"
             app:layout_constraintStart_toEndOf="@+id/btnSol"
             tools:layout_editor_absoluteY="0dp" />
 
@@ -77,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/button_border"
-            android:text="SI"
+            android:text="@string/si_nota"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnLa"
             tools:layout_editor_absoluteY="0dp" />
@@ -87,7 +92,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="691dp"
-        android:layout_height="352dp">
+        android:layout_height="352dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
 
         <Button
             android:id="@+id/btnDoSos"
@@ -110,6 +123,7 @@
             app:layout_constraintStart_toEndOf="@+id/btnDoSos"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
         <Button
             android:id="@+id/btnFaSos"
             android:layout_width="58dp"

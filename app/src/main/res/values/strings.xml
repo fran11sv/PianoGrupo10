@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PianoGrupo10</string>
+    <string name="do_nota">DO</string>
+    <string name="re_nota">RE</string>
+    <string name="mi_nota">MI</string>
+    <string name="fa_nota">FA</string>
+    <string name="sol_nota">SOL</string>
+    <string name="la_nota">LA</string>
+    <string name="si_nota">SI</string>
 </resources>
