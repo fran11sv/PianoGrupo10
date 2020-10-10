@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="40dp"
+    android:padding="5dp"
     tools:context=".piano">
 
 
@@ -14,14 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="3dp">
+        android:layout_gravity="center|center_horizontal"
+        android:layout_marginStart="50dp">
 
 
         <Button
@@ -75,7 +70,6 @@
             android:background="@drawable/button_border"
             android:onClick="cinco"
             android:text="@string/sol_nota"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnFa"
             tools:layout_editor_absoluteY="0dp" />
@@ -87,9 +81,9 @@
             android:background="@drawable/button_border"
             android:onClick="seis"
             android:text="@string/la_nota"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnSol"
+            app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteY="0dp" />
 
         <Button
@@ -113,15 +107,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginStart="48dp"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="3dp">
 
         <Button
             android:id="@+id/btnDoSos"
             android:layout_width="58dp"
-            android:layout_height="120dp"
+            android:layout_height="135dp"
             android:layout_marginStart="60dp"
             android:background="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -132,7 +125,7 @@
         <Button
             android:id="@+id/btnReSos"
             android:layout_width="58dp"
-            android:layout_height="120dp"
+            android:layout_height="135dp"
             android:layout_marginStart="32dp"
             android:background="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -143,7 +136,7 @@
         <Button
             android:id="@+id/btnFaSos"
             android:layout_width="58dp"
-            android:layout_height="120dp"
+            android:layout_height="135dp"
             android:layout_marginStart="116dp"
             android:background="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -154,7 +147,7 @@
         <Button
             android:id="@+id/btnSolSos"
             android:layout_width="58dp"
-            android:layout_height="120dp"
+            android:layout_height="135dp"
             android:layout_marginStart="32dp"
             android:background="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -165,7 +158,7 @@
         <Button
             android:id="@+id/btnLaSos"
             android:layout_width="58dp"
-            android:layout_height="120dp"
+            android:layout_height="135dp"
             android:layout_marginStart="28dp"
             android:background="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
