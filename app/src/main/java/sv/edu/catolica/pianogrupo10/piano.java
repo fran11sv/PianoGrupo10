@@ -29,17 +29,20 @@ public class piano extends AppCompatActivity {
     public boolean onOptionsItemSelected( MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano:
-
+                Intent ventana= new Intent(piano.this,piano.class);
+                startActivity(ventana);
                 break;
             case R.id.animales:
-
+                Intent ventana2= new Intent(piano.this,animales.class);
+                startActivity(ventana2);
                 break;
             case R.id.instrumentos:
-
+                Intent ventana3= new Intent(piano.this,instrumentos.class);
+                startActivity(ventana3);
                 break;
             case R.id.imformacion:
-                Intent ventana= new Intent(piano.this,acerca_de.class);
-                startActivity(ventana);
+                Intent ventana4= new Intent(piano.this,acerca_de.class);
+                startActivity(ventana4);
                 break;
             case R.id.salir:
                 finish();
