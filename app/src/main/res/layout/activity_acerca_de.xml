@@ -25,9 +25,9 @@
             android:fontFamily="@font/assistant_semibold"
             android:gravity="center_horizontal"
             android:padding="20dp"
-            android:text="Acerca de nosotros"
+            android:text="@string/acerca_de_nosotros"
             android:textColor="@android:color/background_light"
-            android:textSize="20dp" />
+            android:textSize="30sp" />
 
 
 
@@ -45,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/foto_oscar"
             android:padding="10dp"
             app:srcCompat="@drawable/yo"
             tools:ignore="DuplicateIds" />
@@ -56,10 +57,10 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Oscar Armando Mancia Rivera"
+            android:text="@string/nombre_oscar"
             android:textColor="@android:color/background_light"
             android:textColorHighlight="@color/colorPrimary"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -71,21 +72,22 @@
         >
 
         <TextView
-            android:id="@+id/framText"
+            android:id="@+id/jesusText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:text="Manuel de Jesus Mejia Baños "
+            android:text="@string/nombre_jesus"
             android:textColor="@android:color/background_light"
             android:textColorHighlight="@android:color/background_light"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/framIma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/foto_jesus"
             android:padding="10dp"
             app:srcCompat="@drawable/yisus" />
 
@@ -104,6 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/foto_luis"
             android:padding="10dp"
             app:srcCompat="@drawable/luisillo" />
 
@@ -114,9 +117,9 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Luis Edgardo Guerra Pineda"
+            android:text="@string/nombre_luis"
             android:textColor="@android:color/background_light"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -127,21 +130,22 @@
         >
 
         <TextView
-            android:id="@+id/oscar"
+            android:id="@+id/franText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:padding="10dp"
-            android:text="Francisco Eduardo Barrientos Lemus"
+            android:text="@string/nombre_fran"
             android:textColor="@android:color/background_light"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/foto_fran"
             android:padding="10dp"
             app:srcCompat="@drawable/fram" />
 

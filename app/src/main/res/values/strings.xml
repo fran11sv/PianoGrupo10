@@ -7,4 +7,13 @@
     <string name="sol_nota">SOL</string>
     <string name="la_nota">LA</string>
     <string name="si_nota">SI</string>
+    <string name="acerca_de_nosotros">Acerca de nosotros</string>
+    <string name="nombre_oscar">Oscar Armando Mancia Rivera</string>
+    <string name="nombre_jesus">Manuel de Jesus Mejia Baños</string>
+    <string name="nombre_luis">Luis Edgardo Guerra Pineda</string>
+    <string name="nombre_fran">Francisco Eduardo Barrientos Lemus</string>
+    <string name="foto_oscar">foto_oscar</string>
+    <string name="foto_jesus">foto_jesus</string>
+    <string name="foto_luis">foto_luis</string>
+    <string name="foto_fran">foto_fran</string>
 </resources>
