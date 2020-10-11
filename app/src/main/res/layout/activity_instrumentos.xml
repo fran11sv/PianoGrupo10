@@ -185,7 +185,7 @@ tools:context=".instrumentos"
         android:layout_height="135dp"
         android:layout_marginStart="28dp"
         android:background="#000000"
-       
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSolSos"
         app:layout_constraintTop_toTopOf="parent"

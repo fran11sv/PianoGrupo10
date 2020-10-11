@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class instrumentos extends AppCompatActivity {
     MediaPlayer nota1,nota2,nota3,nota4,nota5,nota6,nota7;
@@ -56,31 +57,45 @@ public class instrumentos extends AppCompatActivity {
     public void one(View v){
         nota1=MediaPlayer.create(this,R.raw.guitarra);
         nota1.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Guitarra", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void dos(View v){
         nota2=MediaPlayer.create(this,R.raw.trompeta);
         nota2.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Trompeta", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void tres(View v){
         nota3=MediaPlayer.create(this,R.raw.campana);
         nota3.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Campana", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void cuatro(View v){
         nota4=MediaPlayer.create(this,R.raw.trombon);
         nota4.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Trombon", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     public void cinco(View v){
         nota5=MediaPlayer.create(this,R.raw.violin);
         nota5.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Violin", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void seis(View v){
         nota6=MediaPlayer.create(this,R.raw.saxo);
         nota6.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Saxo", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void siete(View v){
         nota7=MediaPlayer.create(this,R.raw.tambor);
         nota7.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Tambor", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
 }

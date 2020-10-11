@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class animales extends AppCompatActivity {
 
@@ -56,30 +57,44 @@ public class animales extends AppCompatActivity {
     public void tonoTigre(View v){
         notasTigre= MediaPlayer.create(this,R.raw.sound_tigre);
         notasTigre.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Tigre", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void tonoMono(View v){
         notasMono=MediaPlayer.create(this,R.raw.sound_mono);
         notasMono.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Mono", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void tonoGallina(View v){
         notasGallina=MediaPlayer.create(this,R.raw.sound_gallina);
         notasGallina.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Gallina", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void tonoVaca(View v){
         notasVaca=MediaPlayer.create(this,R.raw.sound_vaca);
         notasVaca.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Vaca", Toast.LENGTH_SHORT);
+        toast.show();
     }
 
     public void tonoPerro(View v){
         notasPerro=MediaPlayer.create(this,R.raw.sound_perro);
         notasPerro.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Perro", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void tonoGato(View v){
         notasGato=MediaPlayer.create(this,R.raw.sound_gato);
         notasGato.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Gato", Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void tonoElefante(View v){
         notasElefante=MediaPlayer.create(this,R.raw.sound_elefante);
         notasElefante.start();
+        Toast toast = Toast.makeText(this, "Pulsaste Elefante", Toast.LENGTH_SHORT);
+        toast.show();
     }
 }
