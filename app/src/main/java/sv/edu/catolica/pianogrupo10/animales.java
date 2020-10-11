@@ -46,7 +46,9 @@ public class animales extends AppCompatActivity {
                 startActivity(ventana4);
                 break;
             case R.id.salir:
-                finish();
+                finishAffinity();
+                super.onDestroy();
+                android.os.Process.killProcess(android.os.Process.myPid());
                 break;
             default:
                 break;
