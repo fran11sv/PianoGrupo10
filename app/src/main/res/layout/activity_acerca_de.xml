@@ -40,6 +40,7 @@
             android:id="@+id/oscarIma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:padding="10dp"
             app:srcCompat="@drawable/yo"
             tools:ignore="DuplicateIds" />
@@ -49,6 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:padding="10dp"
             android:text="Oscar Armando Mancia Rivera"
             android:textSize="20dp" />
@@ -67,17 +69,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-           android:layout_weight="0.1"
-            android:text="Oscar Armando Mancia Rivera "
+            android:layout_weight="1"
+            android:text="Manuel de Jesus Mejia Baños "
             android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/framIma"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/yo" />
+            android:padding="10dp"
+            app:srcCompat="@drawable/yisus" />
 
 
 
@@ -93,16 +95,18 @@
             android:id="@+id/luisIma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:padding="10dp"
-            app:srcCompat="@drawable/yo" />
+            app:srcCompat="@drawable/luisillo" />
 
         <TextView
             android:id="@+id/luisText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:padding="10dp"
-            android:text="Oscar Armando Mancia Rivera"
+            android:text="Luis Edgardo Guerra Pineda"
             android:textSize="20dp" />
 
     </LinearLayout>
@@ -118,15 +122,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:padding="10dp"
-            android:layout_weight="0.1"
-            android:text="Oscar Armando Mancia Rivera"
+            android:text="Francisco Eduardo Barrientos Lemus"
             android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:padding="10dp"
             app:srcCompat="@drawable/yo" />
 

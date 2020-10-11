@@ -3,11 +3,14 @@ package sv.edu.catolica.pianogrupo10;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class instrumentos extends AppCompatActivity {
+    MediaPlayer nota1,nota2,nota3,nota4,nota5,nota6,nota7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,36 @@ public class instrumentos extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void one(View v){
+        nota1=MediaPlayer.create(this,R.raw.guitarra);
+        nota1.start();
+    }
+    public void dos(View v){
+        nota2=MediaPlayer.create(this,R.raw.trompeta);
+        nota2.start();
+    }
+    public void tres(View v){
+        nota3=MediaPlayer.create(this,R.raw.campana);
+        nota3.start();
+    }
+    public void cuatro(View v){
+        nota4=MediaPlayer.create(this,R.raw.trombon);
+        nota4.start();
+    }
+
+    public void cinco(View v){
+        nota5=MediaPlayer.create(this,R.raw.violin);
+        nota5.start();
+    }
+    public void seis(View v){
+        nota6=MediaPlayer.create(this,R.raw.saxo);
+        nota6.start();
+    }
+    public void siete(View v){
+        nota7=MediaPlayer.create(this,R.raw.tambor);
+        nota7.start();
     }
 
 }
