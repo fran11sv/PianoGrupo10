@@ -32,7 +32,6 @@ public class piano extends AppCompatActivity {
             case R.id.piano:
                 Intent ventana= new Intent(piano.this,piano.class);
                 startActivity(ventana);
-
                 break;
             case R.id.animales:
                 Intent ventana2= new Intent(piano.this,animales.class);
