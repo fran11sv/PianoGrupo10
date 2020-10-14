@@ -134,7 +134,7 @@
             android:layout_height="140dp"
             android:layout_marginStart="31dp"
             android:background="#000000"
-            android:onClick="n4"
+            android:onClick="n5"
             app:layout_constraintStart_toEndOf="@id/btnLaSos"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -144,7 +144,7 @@
             android:layout_height="140dp"
             android:layout_marginStart="30dp"
             android:background="#000000"
-            android:onClick="n5"
+            android:onClick="n4"
             app:layout_constraintStart_toEndOf="@id/btnFaSos"
             app:layout_constraintTop_toTopOf="parent" />
 
