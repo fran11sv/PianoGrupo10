@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#040404"
+    android:orientation="horizontal"
+    tools:context=".piano_tradicional"
+    android:padding="5dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnFa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="cuatro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnMi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="tres"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnFa"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnRe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="dos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnMi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnRe"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="cinco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnFa"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="seis"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_border"
+            android:onClick="siete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnLa"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnDoSos"
+            android:layout_width="58dp"
+            android:layout_height="140dp"
+            android:background="#000000"
+            android:onClick="n1"
+            app:layout_constraintEnd_toStartOf="@+id/btnMi"
+            app:layout_constraintStart_toStartOf="@+id/btnDo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnReSos"
+            android:layout_width="58dp"
+            android:layout_height="140dp"
+            android:background="#000000"
+            android:onClick="n2"
+            app:layout_constraintEnd_toStartOf="@+id/btnFa"
+            app:layout_constraintStart_toStartOf="@+id/btnRe"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnFaSos"
+            android:layout_width="58dp"
+            android:layout_height="140dp"
+            android:background="#000000"
+            android:onClick="n3"
+            app:layout_constraintEnd_toEndOf="@+id/btnSol"
+            app:layout_constraintStart_toStartOf="@+id/btnFa"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLaSos"
+            android:layout_width="58dp"
+            android:layout_height="140dp"
+            android:background="#000000"
+            android:onClick="n4"
+            app:layout_constraintEnd_toEndOf="@+id/btnLa"
+            app:layout_constraintStart_toEndOf="@+id/btnFa"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSolSos"
+            android:layout_width="58dp"
+            android:layout_height="140dp"
+            android:background="#000000"
+            android:onClick="n5"
+            app:layout_constraintEnd_toEndOf="@+id/btnSi"
+            app:layout_constraintStart_toEndOf="@+id/btnSol"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

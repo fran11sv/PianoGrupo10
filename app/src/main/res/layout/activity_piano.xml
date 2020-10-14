@@ -9,13 +9,9 @@
     android:padding="5dp"
     android:background="#040404"
     tools:context=".piano">
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0">
+        android:layout_height="match_parent">
         <Button
             android:id="@+id/btnDo"
             android:layout_width="wrap_content"
@@ -114,14 +110,11 @@
             app:layout_constraintVertical_bias="0.0"
             app:layout_constraintHorizontal_bias="0.0"/>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
-
         <Button
             android:id="@+id/btnDoSos"
             android:layout_width="58dp"
@@ -133,7 +126,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
         <Button
             android:id="@+id/btnReSos"
             android:layout_width="58dp"
@@ -145,7 +137,6 @@
             app:layout_constraintStart_toEndOf="@+id/btnDoSos"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
         <Button
             android:id="@+id/btnFaSos"
             android:layout_width="58dp"
@@ -157,7 +148,6 @@
             app:layout_constraintStart_toEndOf="@+id/btnReSos"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
         <Button
             android:id="@+id/btnSolSos"
             android:layout_width="58dp"
@@ -169,7 +159,6 @@
             app:layout_constraintStart_toEndOf="@+id/btnFaSos"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
         <Button
             android:id="@+id/btnLaSos"
             android:layout_width="58dp"
@@ -181,8 +170,6 @@
             app:layout_constraintStart_toEndOf="@+id/btnSolSos"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

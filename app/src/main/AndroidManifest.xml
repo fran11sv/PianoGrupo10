@@ -9,20 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".acerca_de"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".instrumentos"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".piano" android:screenOrientation="landscape">
-
+        <activity android:name=".piano_tradicional"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".animales"
-            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".acerca_de"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".instrumentos"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".piano"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".animales"
+            android:screenOrientation="landscape" />
 
         <meta-data
             android:name="preloaded_fonts"
