@@ -24,10 +24,6 @@
             android:name=".instrumentos"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".piano"
-            android:screenOrientation="landscape">
-        </activity>
-        <activity
             android:name=".animales"
             android:screenOrientation="landscape" />
 

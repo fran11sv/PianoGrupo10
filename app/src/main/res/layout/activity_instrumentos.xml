@@ -7,7 +7,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:orientation="horizontal"
-android:padding="5dp"
+android:padding="40dp"
 android:background="@drawable/fondomusical"
 tools:context=".instrumentos"
     >
@@ -25,10 +25,8 @@ tools:context=".instrumentos"
         android:onClick="one"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btnTrompeta"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toStartOf="@+id/btnTrompeta"
+        app:layout_constraintTop_toTopOf="parent"  />
 
     <Button
         android:id="@+id/btnTrompeta"
@@ -39,11 +37,8 @@ tools:context=".instrumentos"
         android:onClick="dos"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btnCampana"
-        app:layout_constraintStart_toEndOf="@+id/btnGuitarra"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintEnd_toStartOf="@+id/btnCampana"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnCampana"
@@ -54,11 +49,8 @@ tools:context=".instrumentos"
         android:onClick="tres"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnTrompeta"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btnTrombon"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintEnd_toStartOf="@+id/btnTrombon"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnTrombon"
@@ -69,11 +61,9 @@ tools:context=".instrumentos"
         android:onClick="cuatro"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btnCampana"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btnViolin"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnViolin"
@@ -85,10 +75,7 @@ tools:context=".instrumentos"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnTrombon"
-        app:layout_constraintEnd_toEndOf="@id/btnSax"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnSax"
@@ -100,11 +87,7 @@ tools:context=".instrumentos"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnViolin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btnTambor"
-        tools:layout_editor_absoluteY="0dp"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btnTambor"
@@ -115,78 +98,68 @@ tools:context=".instrumentos"
         android:onClick="siete"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSax"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias="0.0"/>
-    <Button
-        android:id="@+id/btnDoSos"
-        android:layout_width="58dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="145dp"
-        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnReSos"
-        android:layout_width="58dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="32dp"
-        android:background="#000000"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnDoSos"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnFaSos"
-        android:layout_width="58dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="116dp"
-        android:background="#000000"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnReSos"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnSolSos"
-        android:layout_width="58dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="32dp"
-        android:background="#000000"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnFaSos"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnLaSos"
-        android:layout_width="58dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="28dp"
-        android:background="#000000"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnSolSos"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     >
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linea_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <Button
+        android:id="@+id/btnDoSos"
+        android:layout_width="58dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="32dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toStartOf="@id/btnReSos"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnReSos"
+        android:layout_width="58dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="102dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toStartOf="@id/linea_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnFaSos"
+        android:layout_width="58dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/linea_vertical"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSolSos"
+        android:layout_width="58dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="31dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/btnFaSos"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <Button
+        android:id="@+id/btnLaSos"
+        android:layout_width="58dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="30dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@id/btnSolSos"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,7 +25,7 @@ public class acerca_de extends AppCompatActivity {
     public boolean onOptionsItemSelected( MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano:
-                Intent ventana= new Intent(acerca_de.this,piano.class);
+                Intent ventana= new Intent(acerca_de.this,piano_tradicional.class);
                 startActivity(ventana);
                 break;
             case R.id.animales:

@@ -30,7 +30,7 @@ public class instrumentos extends AppCompatActivity {
     public boolean onOptionsItemSelected( MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano:
-                Intent ventana= new Intent(instrumentos.this,piano.class);
+                Intent ventana= new Intent(instrumentos.this,piano_tradicional.class);
                 startActivity(ventana);
                 break;
             case R.id.animales:

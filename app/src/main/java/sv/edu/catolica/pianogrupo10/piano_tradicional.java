@@ -26,7 +26,7 @@ public class piano_tradicional extends AppCompatActivity {
     public boolean onOptionsItemSelected( MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano:
-                Intent ventana= new Intent(piano_tradicional.this,piano.class);
+                Intent ventana= new Intent(piano_tradicional.this,piano_tradicional.class);
                 startActivity(ventana);
                 break;
             case R.id.animales:

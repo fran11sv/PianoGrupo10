@@ -7,7 +7,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="horizontal"
-android:padding="5dp"
+android:padding="40dp"
 android:background="@drawable/selva"
 tools:context=".animales">
 
@@ -24,12 +24,9 @@ tools:context=".animales">
             android:background="@drawable/btn_tigre"
             android:drawableBottom="@drawable/icons8_tiger_64"
             android:onClick="tonoTigre"
-            android:text="@string/do_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/btnMono"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toStartOf="@+id/btnMono"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnMono"
@@ -38,13 +35,9 @@ tools:context=".animales">
             android:background="@drawable/btn_mono"
             android:drawableBottom="@drawable/icons8_monkey_face_64"
             android:onClick="tonoMono"
-            android:text="@string/re_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/btnGallina"
-            app:layout_constraintStart_toEndOf="@+id/btnTigre"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintEnd_toStartOf="@+id/btnGallina"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/btnGallina"
@@ -53,13 +46,9 @@ tools:context=".animales">
             android:background="@drawable/btn_gallina"
             android:drawableBottom="@drawable/icons8_chicken_64"
             android:onClick="tonoGallina"
-            android:text="@string/mi_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnMono"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/btnVaca"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintEnd_toStartOf="@+id/btnVaca"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/btnVaca"
@@ -68,13 +57,10 @@ tools:context=".animales">
             android:background="@drawable/btn_vaca"
             android:drawableBottom="@drawable/icons8_cow_64"
             android:onClick="tonoVaca"
-            android:text="@string/fa_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btnGallina"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/btnPerro"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/btnPerro"
@@ -83,13 +69,9 @@ tools:context=".animales">
             android:background="@drawable/btn_perro"
             android:drawableBottom="@drawable/icons8_dog_64"
             android:onClick="tonoPerro"
-            android:text="@string/sol_nota"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnVaca"
-            app:layout_constraintEnd_toEndOf="@id/btnGato"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/btnGato"
@@ -98,14 +80,9 @@ tools:context=".animales">
             android:background="@drawable/btn_gato"
             android:drawableBottom="@drawable/icons8_cat_64"
             android:onClick="tonoGato"
-            android:text="@string/la_nota"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnPerro"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/btnElefante"
-            tools:layout_editor_absoluteY="0dp"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/btnElefante"
@@ -114,76 +91,68 @@ tools:context=".animales">
             android:background="@drawable/btn_elefante"
             android:drawableBottom="@drawable/icons8_elephant_64"
             android:onClick="tonoElefante"
-            android:text="@string/si_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnGato"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         >
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
 
         <Button
             android:id="@+id/btnDoSos"
             android:layout_width="58dp"
-            android:layout_height="135dp"
-            android:layout_marginStart="145dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="32dp"
             android:background="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toStartOf="@id/btnReSos"
+            app:layout_constraintTop_toTopOf="parent"  />
 
         <Button
             android:id="@+id/btnReSos"
             android:layout_width="58dp"
-            android:layout_height="135dp"
-            android:layout_marginStart="32dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="102dp"
             android:background="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnDoSos"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toStartOf="@id/linea_vertical"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnFaSos"
             android:layout_width="58dp"
-            android:layout_height="135dp"
-            android:layout_marginStart="116dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
             android:background="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnReSos"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
-            android:id="@+id/btnSolSos"
-            android:layout_width="58dp"
-            android:layout_height="135dp"
-            android:layout_marginStart="32dp"
-            android:background="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnFaSos"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toEndOf="@id/linea_vertical"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnLaSos"
             android:layout_width="58dp"
-            android:layout_height="135dp"
-            android:layout_marginStart="28dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="31dp"
             android:background="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnSolSos"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toEndOf="@id/btnFaSos"
+            app:layout_constraintTop_toTopOf="parent"  />
+
+        <Button
+            android:id="@+id/btnSolSos"
+            android:layout_width="58dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:background="#000000"
+            app:layout_constraintStart_toEndOf="@id/btnLaSos"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -208,7 +177,7 @@ tools:context=".animales">
             app:srcCompat="@drawable/piano2" />
 
         <Button
-            android:id="@+id/btnFa"
+            android:id="@+id/btnVaca"
             android:layout_width="wrap_content"
             android:layout_height="201dp"
             android:layout_gravity="bottom"
@@ -261,12 +230,12 @@ tools:context=".animales">
             android:onClick="tonoSOL"
             android:text="@string/sol_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btnFa"
+            app:layout_constraintStart_toEndOf="@+id/btnVaca"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.87" />
 
         <Button
-            android:id="@+id/btnMi"
+            android:id="@+id/btnGallina"
             android:layout_width="wrap_content"
             android:layout_height="201dp"
             android:layout_gravity="bottom"
@@ -276,13 +245,13 @@ tools:context=".animales">
             android:onClick="tonoMI"
             android:text="@string/mi_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnFa"
+            app:layout_constraintEnd_toStartOf="@+id/btnVaca"
 
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.87" />
 
         <Button
-            android:id="@+id/btnRe"
+            android:id="@+id/btnMono"
             android:layout_width="wrap_content"
             android:layout_height="201dp"
             android:layout_gravity="bottom"
@@ -292,7 +261,7 @@ tools:context=".animales">
             android:onClick="tonoRE"
             android:text="@string/re_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnMi"
+            app:layout_constraintEnd_toStartOf="@+id/btnGallina"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.87" />
 
@@ -307,7 +276,7 @@ tools:context=".animales">
             android:onClick="tonoDO"
             android:text="@string/do_nota"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnRe"
+            app:layout_constraintEnd_toStartOf="@+id/btnMono"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.87" />
 
