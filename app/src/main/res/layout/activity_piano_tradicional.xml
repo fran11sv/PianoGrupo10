@@ -84,54 +84,69 @@
             app:layout_constraintStart_toEndOf="@+id/btnLa"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/linea_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
         <Button
             android:id="@+id/btnDoSos"
             android:layout_width="58dp"
             android:layout_height="140dp"
+            android:layout_marginEnd="32dp"
             android:background="#000000"
             android:onClick="n1"
-            app:layout_constraintEnd_toStartOf="@+id/btnMi"
-            app:layout_constraintStart_toStartOf="@+id/btnDo"
+            app:layout_constraintEnd_toStartOf="@id/btnReSos"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnReSos"
             android:layout_width="58dp"
             android:layout_height="140dp"
+            android:layout_marginEnd="102dp"
             android:background="#000000"
             android:onClick="n2"
-            app:layout_constraintEnd_toStartOf="@+id/btnFa"
-            app:layout_constraintStart_toStartOf="@+id/btnRe"
+            app:layout_constraintEnd_toStartOf="@id/linea_vertical"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnFaSos"
             android:layout_width="58dp"
             android:layout_height="140dp"
+            android:layout_marginStart="16dp"
             android:background="#000000"
             android:onClick="n3"
-            app:layout_constraintEnd_toEndOf="@+id/btnSol"
-            app:layout_constraintStart_toStartOf="@+id/btnFa"
+            app:layout_constraintStart_toEndOf="@id/linea_vertical"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnLaSos"
             android:layout_width="58dp"
             android:layout_height="140dp"
+            android:layout_marginStart="31dp"
             android:background="#000000"
             android:onClick="n4"
-            app:layout_constraintEnd_toEndOf="@+id/btnLa"
-            app:layout_constraintStart_toEndOf="@+id/btnFa"
+            app:layout_constraintStart_toEndOf="@id/btnFaSos"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/btnSolSos"
             android:layout_width="58dp"
             android:layout_height="140dp"
+            android:layout_marginStart="30dp"
             android:background="#000000"
             android:onClick="n5"
-            app:layout_constraintEnd_toEndOf="@+id/btnSi"
-            app:layout_constraintStart_toEndOf="@+id/btnSol"
+            app:layout_constraintStart_toEndOf="@id/btnLaSos"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
