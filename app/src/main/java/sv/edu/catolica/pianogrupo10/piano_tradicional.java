@@ -2,6 +2,7 @@ package sv.edu.catolica.pianogrupo10;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 public class piano_tradicional extends AppCompatActivity {
     MediaPlayer notas1,notas2,notas3,notas4,notas5,notas6,notas7,n1,n2,n3,n4,n5;
+    private static final int TIEMPO = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,74 +57,74 @@ public class piano_tradicional extends AppCompatActivity {
         notas1=MediaPlayer.create(this,R.raw.notado);
         notas1.start();
 
-        Toast toast = Toast.makeText(this, "Pulsaste Do", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste Do", TIEMPO);
         toast.show();
     }
     public void dos(View v){
         notas2=MediaPlayer.create(this,R.raw.re);
         notas2.start();
-        Toast toast = Toast.makeText(this, "Pulsaste Re", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste Re", TIEMPO);
         toast.show();
     }
     public void tres(View v){
         notas3=MediaPlayer.create(this,R.raw.mi);
         notas3.start();
-        Toast toast = Toast.makeText(this, "Pulsaste Mi", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste Mi", TIEMPO);
         toast.show();
     }
     public void cuatro(View v){
         notas4=MediaPlayer.create(this,R.raw.fa);
         notas4.start();
-        Toast toast = Toast.makeText(this, "Pulsaste Fa", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste Fa", TIEMPO);
         toast.show();
     }
     public void cinco(View v){
         notas5=MediaPlayer.create(this,R.raw.sol);
         notas5.start();
-        Toast toast = Toast.makeText(this, "Pulsaste Sol", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste Sol", TIEMPO);
         toast.show();
     }
     public void seis(View v){
         notas6=MediaPlayer.create(this,R.raw.la);
         notas6.start();
-        Toast toast = Toast.makeText(this, "Pulsaste La", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste La", TIEMPO);
         toast.show();
     }
     public void siete(View v){
         notas7=MediaPlayer.create(this,R.raw.si);
         notas7.start();
-        Toast toast = Toast.makeText(this, "Pulsaste Si", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste Si", TIEMPO);
         toast.show();
     }
     public void n1(View v){
         n1=MediaPlayer.create(this,R.raw.dosharp);
         n1.start();
 
-        Toast toast = Toast.makeText(this, "Pulsaste DoSos", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste DoSos", TIEMPO);
         toast.show();
     }
     public void n2(View v){
         n2=MediaPlayer.create(this,R.raw.resharp);
         n2.start();
-        Toast toast = Toast.makeText(this, "Pulsaste ReSos", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste ReSos", TIEMPO);
         toast.show();
     }
     public void n3(View v){
         n3=MediaPlayer.create(this,R.raw.fasharp);
         n3.start();
-        Toast toast = Toast.makeText(this, "Pulsaste FaSos", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste FaSos", TIEMPO);
         toast.show();
     }
     public void n4(View v){
         n4=MediaPlayer.create(this,R.raw.solsharp);
         n4.start();
-        Toast toast = Toast.makeText(this, "Pulsaste SolSos", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste SolSos", TIEMPO);
         toast.show();
     }
     public void n5(View v){
         n5=MediaPlayer.create(this,R.raw.lasharp);
         n5.start();
-        Toast toast = Toast.makeText(this, "Pulsaste LaSos", Toast.LENGTH_SHORT);
+        @SuppressLint("WrongConstant") Toast toast = Toast.makeText(this, "Pulsaste LaSos", TIEMPO);
         toast.show();
     }
 }
